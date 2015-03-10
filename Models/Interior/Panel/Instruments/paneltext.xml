@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ <!-- RED text    -->
+  
+  <animation>
+  <type>material</type>
+  <object-name>canopy</object-name>
+   <object-name>reheat</object-name>
+    <object-name>spbrake</object-name>
+  <ambient>
+    <red>1.0</red>
+    <green>0</green>
+    <blue>0.0</blue>
+  </ambient>
+  <diffuse>
+    <red>0.1</red>
+    <green>0</green>
+    <blue>0.0</blue>
+  </diffuse>
+  <emission>
+    <red>0.8</red>
+    <green>0.3</green>
+    <blue>0.3</blue>
+  </emission> 
+ </animation>
+    
+ <text>
+  <name>canopy</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+   <x-m>-4.77</x-m>
+   <y-m>0.182</y-m>
+   <z-m>0.769</z-m>
+   <pitch-deg>0</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">CANOPY</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <animation>
+	<type>select</type>
+	<object-name>canopy</object-name>
+	<condition>
+		<not-equals>
+			<property>instrumentation/doors/crew/position-norm</property>
+			<value>0</value>
+		</not-equals>
+	</condition>
+</animation>
+
+
+ <text>
+  <name>reheat</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+   <x-m>-4.777</x-m>
+   <y-m>0.204</y-m>
+   <z-m>0.737</z-m>
+   <pitch-deg>0</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">REHEAT</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+
+ <animation>
+        <type>select</type>
+        <object-name>reheat</object-name>
+        
+        <condition>
+       <property>engines/engine/afterburner</property>
+        </condition>
+    </animation>
+
+	
+<text>
+  <name>spbrake</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.003</character-size>
+  <offsets>
+ <x-m>-4.777</x-m>
+   <y-m>0.224</y-m>
+   <z-m>0.737</z-m>
+   <pitch-deg>0</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">SP BRAKE</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>	
+ 
+ <animation>
+        <type>select</type>
+        <object-name>spbrake</object-name>
+        
+        <condition>
+       <property>surface-positions/speedbrake-pos-norm</property>
+        </condition>
+    </animation>
+ 
+ <!-- Yellow text    -->
+  
+  <animation>
+  <type>material</type>
+  <object-name>ap</object-name>
+   <object-name>flaps</object-name>
+    
+   <ambient>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>0.0</blue>
+  </ambient>
+  <diffuse>
+    <red>0.1</red>
+    <green>0.1</green>
+    <blue>0.0</blue>
+  </diffuse>
+  <emission>
+    <red>0.8</red>
+    <green>0.8</green>
+    <blue>0.3</blue>
+  </emission> 
+ </animation>
+ 
+ 
+ <text>
+  <name>ap</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+   <x-m>-4.779</x-m>
+   <y-m>0.208</y-m>
+   <z-m>0.727</z-m>
+   <pitch-deg>0</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">A/P</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+  <animation>
+        <type>select</type>
+        <object-name>ap</object-name>
+        
+        <condition>
+ <or>
+  <not-equals>
+   <property>/autopilot/locks/heading</property>
+   <value></value>
+  </not-equals>
+  <not-equals>
+   <property>/autopilot/locks/altitude</property>
+   <value></value>
+  </not-equals>
+  <not-equals>
+   <property>/autopilot/locks/speed</property>
+   <value></value>
+  </not-equals>
+  <and>
+  <not-equals>
+   <property>/autopilot/locks/heading</property>
+   <value></value>
+  </not-equals>
+  <not-equals>
+   <property>/autopilot/locks/altitude</property>
+   <value></value>
+  </not-equals>
+  </and>
+  <and>
+  <not-equals>
+   <property>/autopilot/locks/altitude</property>
+   <value></value>
+  </not-equals>
+  <not-equals>
+   <property>/autopilot/locks/speed</property>
+   <value></value>
+  </not-equals>
+  </and>
+  <and>
+  <not-equals>
+   <property>/autopilot/locks/heading</property>
+   <value></value>
+  </not-equals>
+  <not-equals>
+   <property>/autopilot/locks/speed</property>
+   <value></value>
+  </not-equals>
+  </and>
+ </or>
+</condition>
+    </animation>
+	
+<text>
+  <name>flaps</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+    <x-m>-4.779</x-m>
+   <y-m>0.226</y-m>
+   <z-m>0.726</z-m>
+   <pitch-deg>0</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">FLAPS</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>	
+ 
+  <animation>
+        <type>select</type>
+        <object-name>flaps</object-name>
+        
+        <condition>
+       <property>surface-positions/flap-pos-norm</property>
+        </condition>
+    </animation>
+	
+	
+	
+<!-- white text    -->
+  
+  <animation>
+  <type>material</type>
+  <object-name>totfuel</object-name>
+  
+    
+   <ambient>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>
+  </ambient>
+  <diffuse>
+    <red>0.5</red>
+    <green>0.5</green>
+    <blue>0.5</blue>
+  </diffuse>
+  <emission>
+    <red>1.0</red>
+    <green>1.0</green>
+    <blue>1.0</blue>
+  </emission> 
+ </animation>	
+ 
+ <text>
+  <name>totfuel</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.0047</character-size>
+  <offsets>
+   <x-m>-4.81</x-m>
+   <y-m>0.207</y-m>
+   <z-m>0.533</z-m>
+   <pitch-deg>0</pitch-deg>
+  </offsets>
+ <axis-alignment>yz-plane</axis-alignment>
+   <type type="string">number-value</type>
+   <format type="string">%5.2f</format>
+  <truncate type="bool">true</truncate>
+  <property>consumables/fuel/total-fuel-lbs</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <!-- Green text -->
+ 
+ <animation>
+  <type>material</type>
+   <object-name>uc1</object-name>
+   
+  <object-name>uc2</object-name>
+  <object-name>uc3</object-name>
+  
+  <ambient>
+    <red>0.0</red>
+    <green>1.0</green>
+    <blue>0.0</blue>
+  </ambient>
+  <diffuse>
+    <red>0.0</red>
+    <green>1.0</green>
+    <blue>0.0</blue>
+  </diffuse>
+  <emission>
+    <red>0.3</red>
+    <green>0.8</green>
+    <blue>0.3</blue>
+  </emission> 
+ </animation>
+ 
+ <text>
+  <name>uc1</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+   <x-m>-4.787</x-m>
+   <y-m>-0.491</y-m>
+   <z-m>0.392</z-m>
+   <pitch-deg>-21</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">LOCKED</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>uc2</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+   <x-m>-4.781</x-m>
+   <y-m>-0.53</y-m>
+   <z-m>0.374</z-m>
+   <pitch-deg>-21</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">LOCKED</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>uc3</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+   <x-m>-4.781</x-m>
+   <y-m>-0.46</y-m>
+   <z-m>0.374</z-m>
+   <pitch-deg>-21</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">LOCKED</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ 
+ <animation>
+        <type>select</type>
+        <object-name>uc1</object-name>
+        
+        <condition>
+       <property>gear/gear[0]/position-norm</property>
+        </condition>
+    </animation>
+	
+ <animation>
+        <type>select</type>
+        <object-name>uc2</object-name>
+        
+        <condition>
+       <property>gear/gear[1]/position-norm</property>
+        </condition>
+    </animation>	
+	
+<animation>
+        <type>select</type>
+        <object-name>uc3</object-name>
+        
+        <condition>
+       <property>gear/gear[2]/position-norm</property>
+        </condition>
+    </animation>		
+
+</PropertyList>
+
+

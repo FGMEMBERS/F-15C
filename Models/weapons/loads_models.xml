@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+<animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>1000</max-m>
+ </animation>
+	
+  <!--back-->
+  <!--right -->
+  <!--up -->
+
+ 
+
+  <!--station left 1 -->
+
+
+  <model>
+    <name>left-AIM-9-pos-1</name>
+    <path>Aircraft/FGUK-weapons/Air-Air/aim9/AIM9L.xml</path>
+    <offsets>
+      <x-m>  1 </x-m>
+      <y-m> -3.3</y-m>
+      <z-m>  0.5</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+ 
+
+
+  <!-- station left 2 -->
+
+
+ <model>
+    <name>left-drop-tank</name>
+    <path>Aircraft/F-15C/Models/weapons/tank2000.xml</path>
+    <offsets>
+      <x-m>  0</x-m>
+      <y-m> -0.45</y-m>
+      <z-m>  0.35</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+ 
+
+
+ 
+  <!-- station left 3 -->
+
+  <model>
+    <name>left-AIM-9-pos-2</name>
+    <path>Aircraft/FGUK-weapons/Air-Air/aim9/AIM9L.xml</path>
+    <offsets>
+      <x-m>  1 </x-m>
+      <y-m> -2.5</y-m>
+      <z-m>  0.5</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+
+    </offsets>
+  </model>	
+
+ 
+
+
+
+<!-- Station Left 7 -->
+
+<model>
+    <name>left-AIM-120-pos-1</name>
+    <path>Aircraft/FGUK-weapons/Air-Air/aim120/AIM-120.xml</path>
+    <offsets>
+      <x-m>  0.0 </x-m>
+      <y-m>-1.55</y-m>
+      <z-m>  -0.04</z-m>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>	
+
+ 
+
+ 
+ <!-- Station Left 8 -->
+
+<model>
+    <name>left-AIM-120-pos-2</name>
+    <path>Aircraft/FGUK-weapons/Air-Air/aim120/AIM-120.xml</path>
+    <offsets>
+      <x-m>  3.3</x-m>
+      <y-m>-1.55</y-m>
+      <z-m>  -0.05</z-m>
+      <heading-deg> 2 </heading-deg>
+    </offsets>
+  </model>	
+
+ 
+
+
+
+  <!-- center station -->
+
+ <model>
+    <name>Centre-drop-tank</name>
+    <path>Aircraft/F-15C/Models/weapons/tank2000.xml</path>
+    <offsets>
+      <x-m> -1.0</x-m>
+      <y-m> 2.45</y-m>
+      <z-m>  -0.27</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  
+
+<!-- Station Right 8 -->
+
+<model>
+    <name>right-AIM-120-pos-2</name>
+    <path>Aircraft/FGUK-weapons/Air-Air/aim120/AIM-120.xml</path>
+    <offsets>
+       <x-m>  3.3</x-m>
+      <y-m>1.65</y-m>
+      <z-m>  -0.05</z-m>
+      <heading-deg> -2 </heading-deg>
+    </offsets>
+  </model>	
+
+ 
+
+<!-- Station Right 7 -->
+  <model>
+    <name>right-AIM-120-pos-1</name>
+   <path>Aircraft/FGUK-weapons/Air-Air/aim120/AIM-120.xml</path>
+    <offsets>
+       <x-m>  0.0 </x-m>
+      <y-m>1.65</y-m>
+      <z-m>  -0.04</z-m>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>	
+
+ 
+
+
+ 
+
+  <!-- station right 3 -->
+<model>
+    <name>right-AIM-9-pos-2</name>
+    <path>Aircraft/FGUK-weapons/Air-Air/aim9/AIM9L.xml</path>
+    <offsets>
+      <x-m>  1 </x-m>
+      <y-m> 2.75</y-m>
+      <z-m>  0.5</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+
+    </offsets>
+  </model>	
+
+  
+
+  <!--station right 2 -->
+  
+<model>
+    <name>right-drop-tank</name>
+    <path>Aircraft/F-15C/Models/weapons/tank2000.xml</path>
+    <offsets>
+       <x-m>  0</x-m>
+      <y-m> 5.6</y-m>
+      <z-m>  0.35</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+  
+
+
+  <!--station right 1 -->
+  
+<model>
+    <name>right-AIM-9-pos-1</name>
+    <path>Aircraft/FGUK-weapons/Air-Air/aim9/AIM9L.xml</path>
+    <offsets>
+       <x-m>  1 </x-m>
+      <y-m> 3.46</y-m>
+      <z-m>  0.5</z-m>
+      <pitch-deg> 0.0 </pitch-deg>
+    </offsets>
+  </model>	
+
+ 
+
+
+</PropertyList>

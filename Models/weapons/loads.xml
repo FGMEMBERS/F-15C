@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="loads_models.xml">
+
+<animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>1000</max-m>
+ </animation>
+	
+  <!--back-->
+  <!--right -->
+  <!--up -->
+
+ 
+
+  <!--station left 1 -->
+
+
+
+
+  <animation>
+    <type>select</type>
+    <object-name>left-AIM-9-pos-1</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[0]/selected</property>
+          <value>AIM-9</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[0]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+  <!-- station left 2 -->
+
+
+
+  <animation>
+    <type>select</type>
+    <object-name>left-drop-tank</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[1]/selected</property>
+          <value>Droptank</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[1]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+ 
+  <!-- station left 3 -->
+
+
+
+  <animation>
+    <type>select</type>
+    <object-name>left-AIM-9-pos-2</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[2]/selected</property>
+          <value>AIM-9</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[2]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+
+<!-- Station Left 7 -->
+
+
+
+  <animation>
+    <type>select</type>
+    <object-name>left-AIM-120-pos-1</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[3]/selected</property>
+          <value>AIM-120</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[3]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation> 
+
+ 
+ <!-- Station Left 8 -->
+
+
+
+  <animation>
+    <type>select</type>
+    <object-name>left-AIM-120-pos-2</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[4]/selected</property>
+          <value>AIM-120</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[4]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation> 
+
+
+
+  <!-- center station -->
+
+ 
+
+  <animation>
+    <type>select</type>
+    <object-name>Centre-drop-tank</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[5]/selected</property>
+          <value>Droptank</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[5]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation> 
+
+<!-- Station Right 8 -->
+
+
+
+  <animation>
+    <type>select</type>
+    <object-name>right-AIM-120-pos-2</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[6]/selected</property>
+          <value>AIM-120</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[6]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation> 
+
+<!-- Station Right 7 -->
+  
+
+  <animation>
+    <type>select</type>
+    <object-name>right-AIM-120-pos-1</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[7]/selected</property>
+          <value>AIM-120</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[7]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation> 
+
+
+ 
+
+  <!-- station right 3 -->
+
+
+  <animation>
+    <type>select</type>
+    <object-name>right-AIM-9-pos-2</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[8]/selected</property>
+          <value>AIM-9</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[8]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+  <!--station right 2 -->
+  
+
+
+  <animation>
+    <type>select</type>
+    <object-name>right-drop-tank</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[9]/selected</property>
+          <value>Droptank</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[9]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+  <!--station right 1 -->
+  
+
+
+  <animation>
+    <type>select</type>
+    <object-name>right-AIM-9-pos-1</object-name>      
+    <condition>
+      <and>
+        <equals>
+          <property>sim/weight[10]/selected</property>
+          <value>AIM-9</value>
+        </equals>
+        <equals>
+          <property>controls/armament/station[10]/release</property>
+          <value>false</value>
+        </equals>
+      </and>
+    </condition>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+
+
+
+
+</PropertyList>
+
+

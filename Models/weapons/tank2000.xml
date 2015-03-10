@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>Aircraft/F-15C/Models/weapons/wingtanks.ac</path>
+
+  <animation>
+    <object-name>tank2000</object-name>
+	  <attach>world</attach>
+
+  <placer>
+   <type>point</type>
+  </placer>
+  </animation>
+
+</PropertyList>

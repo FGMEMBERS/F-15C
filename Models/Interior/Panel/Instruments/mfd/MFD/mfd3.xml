@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+  <PropertyList> 
+    <path>mfd1.ac</path>
+<!--
+ <panel>
+  <path>Aircraft/F-15C/Models/Interior/Panel/Instruments/mfd/MFD/mfd3-hotspots.xml</path>
+  <bottom-left>
+   <x-m>0.02</x-m>
+   <y-m>-0.1</y-m>
+   <z-m>-0.1</z-m>
+  </bottom-left>
+  <bottom-right>
+   <x-m>0.02</x-m>
+   <y-m>0.1</y-m>
+   <z-m>-0.1</z-m>
+  </bottom-right>
+  <top-left>
+   <x-m>0.02</x-m>
+   <y-m>-0.1</y-m>
+   <z-m> 0.1</z-m>
+  </top-left>
+ </panel>
+-->
+    <model>
+	<name>radar</name>
+	    <path>Aircraft/F-15C/Models/Interior/Panel/Instruments/Radar/Gradar.xml</path>
+	    <offsets> 
+	      <x-m>0.0</x-m>
+	      <y-m>0</y-m>
+	      <z-m>0</z-m>
+	    </offsets>
+    </model>
+
+	
+
+  </PropertyList>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <default>
+    <menu n="100">
+      <label>F-15C</label>
+      <enabled type="bool">true</enabled>
+<item n="1">     
+	
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item>
+	  
+ <item n="2">
+        <label>MP Shot Report</label>
+        <binding>
+          <command>nasal</command>
+          <script>missile.MPReport()</script>
+        </binding>
+      </item>
+	  
+      <item n="3">
+        <label>Reload Gun</label>
+        <binding>
+          <command>nasal</command>
+          <script>guns.reload_Cannon()</script>
+        </binding>
+      </item>
+	  
+      <item n="4">
+        <label>No load</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.clean()</script>
+        </binding>
+      </item>
+	  
+      <item n="5">
+        <label>CAP</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.cap()</script>
+        </binding>
+      </item>
+      <item n="6">
+        <label>CAP Extended loiter</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.CAPext()</script>
+        </binding>
+      </item>
+      <item n="7">
+        <label>Ferry configuration</label>
+        <binding>
+          <command>nasal</command>
+          <script>load.Ferry()</script>
+        </binding>
+      </item>
+     
+      <item n="8">
+        <label>Target Tracking</label>
+        <name>track_target</name>
+        <binding>
+           <command>dialog-show</command>
+           <dialog-name>track_target</dialog-name>
+        </binding>
+      </item> 
+    </menu>
+  </default>
+
+</PropertyList>
+
